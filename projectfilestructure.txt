@@ -1,0 +1,14 @@
+anotherbot/
+├── index.js               ← main entry (connects Baileys)
+├── config.json            ← bot name, prefix, owner, etc.
+├── auth_info/             ← WhatsApp session files
+├── commands/              ← all your features live here
+│   ├── help.js
+│   ├── kick.js
+│   ├── mute.js
+│   ├── promote.js
+│   ├── viewstatus.js      ← NEW: auto-view WhatsApp statuses
+│   └── ...more commands
+├── utils/
+│   └── helpers.js         ← optional: shared helper functions
+└── package.json

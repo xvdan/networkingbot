@@ -1,0 +1,24 @@
+{
+  "name": "anotherbot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc.6",
+    "google-tts-api": "^2.0.2",
+    "libsignal": "github:adiwajshing/libsignal-node",
+    "pino": "^10.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.34.4",
+    "wa-sticker-formatter": "^4.4.4"
+  }
+}

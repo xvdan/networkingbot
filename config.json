@@ -1,0 +1,17 @@
+{
+  "botName": "TheBagBot",
+  "ownerNumber": "254786829240",
+  "prefix": ".",
+   "version": "1.0.0",
+   "mode": "public",
+  "channelLink": "https://youtube.com/@mychannel",
+  "githubLink": "https://github.com/myusername/mybot",
+  "website": "https://yourwebsite.com",
+  "supportGroup": "https://chat.whatsapp.com/example",
+  "autoReplies": {
+    "hi": "👋 Hello! I'm TheBagBot, how can I help you today?",
+    "hello": "Hey there! TheBagBot is online 🚀",
+    "help": "Type .help to see all available commands.",
+    "thanks": "You're welcome! 😊"
+  }
+}
