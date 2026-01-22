@@ -11,24 +11,83 @@
   "supportGroup": "https://chat.whatsapp.com/cdsdfsfsewqe",
 
   "autoReplies": {
-    "hi": "👋 Hello! I’m *Orion Vale*. How can I help you today?",
-    "hello": "Hey there 👋 Welcome! What would you like to know?",
-    "hey": "Hi 😊 How can I assist you?",
-    "good morning": "☀️ Good morning! Hope you’re having a great day.",
-    "good evening": "🌇 Good evening! How can I help you tonight?",
+    "greeting": {
+      "examples": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "good afternoon"
+      ],
+      "reply": "👋 Hello! I’m *Orion Vale*. How can I help you today?"
+    },
 
-    "i want to join": "✅ Awesome choice!\nRegister here:\nhttps://pesahive.com/user/register?ref=orionvale",
-    "how do i register": "📝 You can register using this link:\nhttps://pesahive.com/user/register?ref=orionvale",
-    "activate my account": "⚡ Activate your account here:\nhttps://pesahive.com/user/register?ref=orionvale",
-    "affiliate marketing": "💼 Affiliate marketing is about promoting products and earning commissions. Want to get started?",
+    "affiliateRegistration": {
+      "examples": [
+        "i want to join",
+        "how do i register",
+        "register",
+        "sign up",
+        "activate my account",
+        "join your team"
+      ],
+      "reply": "✅ Awesome choice!\nRegister here:\nhttps://pesahive.com/user/register?ref=orionvale"
+    },
 
-    "what is pesahive": "💡 *PesaHive* is a simple and transparent affiliate platform designed for beginners.",
-    "tell me about pesahive": "📊 PesaHive helps you earn by sharing opportunities. Simple systems, real results.",
-    "how does pesahive work": "🔍 You register, activate your account, learn the system, and start earning step by step.",
+    "affiliateMarketingInfo": {
+      "examples": [
+        "affiliate marketing",
+        "what is affiliate marketing",
+        "how does affiliate marketing work"
+      ],
+      "reply": "💼 Affiliate marketing is about promoting products and earning commissions. Want to get started?"
+    },
 
-    "contact": "📞 You can reach Orion directly on WhatsApp:\nhttps://wa.me/254738638853?text=Hi%20Orion%2C%20I%20read%20your%20PDF%20and%20I%20am%20ready%20to%20join.",
-    "support": "🛠 Need help? Join our support group:\nhttps://chat.whatsapp.com/cdsdfsfsewqe",
+    "pesahiveInfo": {
+      "examples": [
+        "what is pesahive",
+        "tell me about pesahive",
+        "how does pesahive work",
+        "pesahive explanation",
+        "pesahive platform"
+      ],
+      "reply": "💡 *PesaHive* is a simple and transparent affiliate platform designed for beginners."
+    },
 
-    "default": "🤔 I didn’t quite understand that.\nTell me what you want to achieve and I’ll guide you."
+    "pesahiveHowItWorks": {
+      "examples": [
+        "how does pesahive work",
+        "explain pesahive",
+        "pesahive system",
+        "how do i earn on pesahive"
+      ],
+      "reply": "🔍 You register, activate your account, learn the system, and start earning step by step."
+    },
+
+    "contactOwner": {
+      "examples": [
+        "contact",
+        "contact orion",
+        "talk to you",
+        "reach you",
+        "admin"
+      ],
+      "reply": "📞 You can reach Orion directly on WhatsApp:\nhttps://wa.me/254738638853?text=Hi%20Orion%2C%20I%20read%20your%20PDF%20and%20I%20am%20ready%20to%20join."
+    },
+
+    "support": {
+      "examples": [
+        "support",
+        "help",
+        "support group",
+        "need help"
+      ],
+      "reply": "🛠 Need help? Join our support group:\nhttps://chat.whatsapp.com/cdsdfsfsewqe"
+    },
+
+    "default": {
+      "reply": "🤔 I didn’t quite understand that.\nTell me what you want to achieve and I’ll guide you step by step."
+    }
   }
 }
