@@ -1,17 +1,34 @@
 {
-  "botName": "TheBagBot",
+  "botName": "Orion Vale",
   "ownerNumber": "254786829240",
   "prefix": ".",
-   "version": "1.0.0",
-   "mode": "public",
-  "channelLink": "https://youtube.com/@mychannel",
-  "githubLink": "https://github.com/myusername/mybot",
-  "website": "https://yourwebsite.com",
-  "supportGroup": "https://chat.whatsapp.com/example",
+  "version": "1.0.0",
+  "mode": "public",
+
+  "channelLink": "https://youtube.com/@ctrl_alt_learn",
+  "githubLink": "https://github.com/remitedan/",
+  "website": "https://pesahive.com",
+  "supportGroup": "https://chat.whatsapp.com/cdsdfsfsewqe",
+
   "autoReplies": {
-    "hi": "👋 Hello! I'm TheBagBot, how can I help you today?",
-    "hello": "Hey there! TheBagBot is online 🚀",
-    "help": "Type .help to see all available commands.",
-    "thanks": "You're welcome! 😊"
+    "hi": "👋 Hello! I’m *Orion Vale*. How can I help you today?",
+    "hello": "Hey there 👋 Welcome! What would you like to know?",
+    "hey": "Hi 😊 How can I assist you?",
+    "good morning": "☀️ Good morning! Hope you’re having a great day.",
+    "good evening": "🌇 Good evening! How can I help you tonight?",
+
+    "i want to join": "✅ Awesome choice!\nRegister here:\nhttps://pesahive.com/user/register?ref=orionvale",
+    "how do i register": "📝 You can register using this link:\nhttps://pesahive.com/user/register?ref=orionvale",
+    "activate my account": "⚡ Activate your account here:\nhttps://pesahive.com/user/register?ref=orionvale",
+    "affiliate marketing": "💼 Affiliate marketing is about promoting products and earning commissions. Want to get started?",
+
+    "what is pesahive": "💡 *PesaHive* is a simple and transparent affiliate platform designed for beginners.",
+    "tell me about pesahive": "📊 PesaHive helps you earn by sharing opportunities. Simple systems, real results.",
+    "how does pesahive work": "🔍 You register, activate your account, learn the system, and start earning step by step.",
+
+    "contact": "📞 You can reach Orion directly on WhatsApp:\nhttps://wa.me/254738638853?text=Hi%20Orion%2C%20I%20read%20your%20PDF%20and%20I%20am%20ready%20to%20join.",
+    "support": "🛠 Need help? Join our support group:\nhttps://chat.whatsapp.com/cdsdfsfsewqe",
+
+    "default": "🤔 I didn’t quite understand that.\nTell me what you want to achieve and I’ll guide you."
   }
 }
