@@ -6,17 +6,18 @@ const TfIdf = natural.TfIdf;
 const tfidf = new TfIdf();
 let modelBuilt = false;
 
+// 🔧 Build model safely (ignore default)
 function buildModel(autoReplies) {
   if (modelBuilt) return;
   for (const intent in autoReplies) {
+    if (intent === "default") continue; // skip default
     const examples = autoReplies[intent].examples || [];
-    examples.forEach(e =>
-      tfidf.addDocument(e.toLowerCase(), intent)
-    );
+    examples.forEach(e => tfidf.addDocument(e.toLowerCase(), intent));
   }
   modelBuilt = true;
 }
 
+// 🔧 Auto-reply eligibility
 function canAutoReply(m) {
   const settings = JSON.parse(
     fs.readFileSync("./autoreply.settings.json", "utf8")
@@ -35,13 +36,18 @@ function canAutoReply(m) {
   return true;
 }
 
+// 🔧 NLP prediction with confidence threshold
 function predictIntent(text) {
   const scores = {};
   tfidf.tfidfs(text, (i, measure, key) => {
     scores[key] = (scores[key] || 0) + measure;
   });
-  return Object.entries(scores)
-    .sort((a, b) => b[1] - a[1])[0]?.[0];
+
+  const [intent, score] =
+    Object.entries(scores).sort((a, b) => b[1] - a[1])[0] || [];
+
+  // Only return if above threshold
+  return score > 0.1 ? intent : null;
 }
 
 export default {
@@ -64,6 +70,7 @@ export default {
 
     // Phase 1 — fuzzy match
     for (const intent in config.autoReplies) {
+      if (intent === "default") continue; // skip default
       const examples = config.autoReplies[intent].examples || [];
       if (!examples.length) continue;
 
@@ -76,7 +83,7 @@ export default {
       }
     }
 
-    // Phase 2 — intent prediction
+    // Phase 2 — intent prediction (NLP)
     const predicted = predictIntent(text);
     if (predicted && config.autoReplies[predicted]) {
       await sock.sendMessage(from, {
