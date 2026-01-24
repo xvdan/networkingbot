@@ -12,3 +12,30 @@ anotherbot/
 ├── utils/
 │   └── helpers.js         ← optional: shared helper functions
 └── package.json
+
+mkdir -p media/{images,audio,videos,stickers,docs,gifs}
+
+# Create placeholder media files (you'll replace with actual media later)
+echo "Creating media directory structure..."
+touch media/images/withdrawal-proof.jpg
+touch media/images/earnings-screenshot.jpg
+touch media/images/dashboard-preview.jpg
+touch media/images/mobile-dashboard.jpg
+touch media/images/system-diagram.jpg
+touch media/images/earning-flowchart.jpg
+touch media/images/welcome-team.jpg
+
+touch media/videos/success-story.mp4
+touch media/videos/getting-started.mp4
+
+touch media/audio/next-steps.mp3
+
+touch media/stickers/funny-laugh.webp
+touch media/stickers/celebration.webp
+
+touch media/gifs/laughing.gif
+touch media/gifs/celebration.gif
+
+touch media/docs/complete-guide.pdf
+
+echo "Media directory structure created! Add your actual media files to these locations."
